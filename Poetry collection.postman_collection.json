@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "01a72258-8c87-43f1-aec3-997a08870e07",
+		"name": "Poetry collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Poetry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "poetry",
+							"value": "kishor\\'s poetry",
+							"type": "text"
+						},
+						{
+							"key": "poet_name",
+							"value": "Kishor Ramani",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.43.103:8081/poetryapi/addpoetry.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"103"
+					],
+					"port": "8081",
+					"path": [
+						"poetryapi",
+						"addpoetry.php"
+					],
+					"query": [
+						{
+							"key": "poetry",
+							"value": "I wake up every day with your smile on my mind.\nIt's a beautiful sight to behold, so soft and so kind.\nMy dreams are filled with the thought of me and you.\nI awake and smile, for my dreams have come true",
+							"disabled": true
+						},
+						{
+							"key": "poet_name",
+							"value": "Luke O. Meyers",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Poetry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "poetry",
+							"value": "Hey what is this poetry",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.43.103:8081/poetryapi/updatepoetry.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"103"
+					],
+					"port": "8081",
+					"path": [
+						"poetryapi",
+						"updatepoetry.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Poetry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "poetry_id",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.43.103:8081/poetryapi/deletepoetry.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"103"
+					],
+					"port": "8081",
+					"path": [
+						"poetryapi",
+						"deletepoetry.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Poetry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.43.103:8081/poetryapi/getpoetry.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"103"
+					],
+					"port": "8081",
+					"path": [
+						"poetryapi",
+						"getpoetry.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
